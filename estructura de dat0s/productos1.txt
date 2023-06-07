@@ -1,0 +1,39 @@
+
+class Producto:
+    def __init__(self,nombre,precio):
+        self.nombre=nombre
+        self.precio=precio 
+    def mostrar(self):
+        print("producto:", self.nombre,"precio: ", self.precio)
+        def vender c=int(input("ingrese la cantidad que desea comprar: "))
+        t=c*60
+        print("el total es: ", t )
+            
+
+    
+
+
+p1= Producto("tatin", 60)
+p2= Producto("terrabusi", 70)
+p3= Producto("sol serrano", 50)
+
+while True:
+    menu= input("1-tatin\n 2-terrabusi\n 3-sol serrano\n ingrese: ")
+    if menu=="1":
+        p1.mostrar()
+        c=int(input("ingrese la cantidad que desea comprar: "))
+        t=c*60
+        print("el total es: ", t )
+    elif menu=="2":
+        p2.mostrar()
+        c=int(input("ingrese la cantidad que desea comprar: "))
+        t=c*60
+        print("el total es: ", t )
+    else:
+        p3.mostrar()
+        c=int(input("ingrese la cantidad que desea comprar: "))
+        t=c*80
+        print("el total es: ", t )  
+    preg=input("desea ingresar otro producto s/n")  
+    if preg=="n":
+           break
